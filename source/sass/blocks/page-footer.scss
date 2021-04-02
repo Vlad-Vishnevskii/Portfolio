@@ -1,0 +1,145 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 98px;
+  margin: 0 auto;
+  margin-top: 222px;
+
+  @include tablets {
+    width: 100%;
+    margin-top: 131px;
+  }
+
+  @include phones {
+    margin-top: 103px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.page-footer h3 {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $special-black;
+  width: 235px;
+  letter-spacing: 0.2px;
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  @include phones {
+    font-size: 18px;
+  }
+}
+
+.page-footer p {
+  width: 555px;
+  margin-top: 29px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 31px;
+  color: $black-opacity-low;
+  text-align: center;
+  letter-spacing: 0.7px;
+
+  @include tablets {
+    width: 100%;
+    margin-top: 19px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+  }
+
+  @include phones {
+    width: 272px;
+  }
+}
+
+.page-footer img {
+  display: block;
+  margin-top: 20px;
+
+  @include tablets {
+    width: 698px;
+    height: 545px;
+    margin-top: 2px;
+    object-fit: cover;
+  }
+
+  @include phones {
+    width: 320px;
+    height: 250px;
+  }
+}
+
+.page-footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 566px;
+  margin-top: 41px;
+  flex-wrap: wrap;
+
+  @include tablets {
+    width: 577px;
+    margin-top: 20px;
+  }
+
+  @include phones {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+    width: 100%;
+    margin-top: 31px;
+  }
+}
+
+.page-footer__link {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: $black-opacity-extra;
+  margin-bottom: 10px;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.page-footer__link svg {
+  margin-right: 16px;
+}
+
+.page-footer__link_phone svg {
+  fill: $white;
+  margin-right: 15px;
+}
+
+.page-footer__link_email {
+  @include tablets {
+    padding-left: 9px;
+    letter-spacing: 0.5px;
+  }
+
+  @include phones {
+    margin-bottom: 23px;
+  }
+}
+
+.page-footer__link_phone {
+  text-decoration: none;
+  padding-right: 20px;
+
+  @include phones {
+    padding-right: 15px;
+  }
+}

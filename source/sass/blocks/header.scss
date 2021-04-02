@@ -1,0 +1,26 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  min-height: 825px;
+  background-color: $black;
+
+  @include retina {
+    background: url("../img/bike-background-desktop@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  @include tablets {
+    min-height: initial;
+    background: none;
+  }
+}
+
+.header__logo  path {
+  fill: $pink;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

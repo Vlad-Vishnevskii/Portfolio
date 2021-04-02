@@ -1,0 +1,109 @@
+.videos-about-bicycles {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black-background;
+}
+
+.videos-about-bicycles__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 97px;
+  width: 100%;
+  min-height: 706px;
+
+  @include tablets {
+    padding-top: 50px;
+    min-height: 413px;
+  }
+
+  @include phones {
+    padding-top: 65px;
+    min-height: 384px;
+  }
+}
+
+.videos-about-bicycles h2 {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $white;
+  letter-spacing: 0.5px;
+
+  @include tablets {
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+
+  @include phones {
+    padding-right: 6px;
+  }
+}
+
+.videos-about-bicycles__image-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos-about-bicycles p {
+  margin-top: 20px;
+  margin-bottom: -45px;
+  width: 324px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $white-opacity;
+
+  @include tablets {
+    width: 429px;
+    text-align: center;
+  }
+
+  @include phones {
+    width: 288px;
+  }
+}
+
+.videos-about-bicycles img {
+  position: relative;
+  top: 96px;
+  display: block;
+  padding-top: 10px;
+  width: 929px;
+  height: 522px;
+
+  @include tablets {
+    top: 84px;
+    width: 503px;
+    height: 282px;
+    object-fit: cover;
+  }
+
+  @include phones {
+    top: 96px;
+    width: 288px;
+    height: 162px;
+  }
+}
+
+.videos-about-bicycles__play-button {
+  position: absolute;
+  top: 327px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include tablets {
+    top: 179px;
+  }
+
+  @include phones {
+    top: 144px;
+  }
+}

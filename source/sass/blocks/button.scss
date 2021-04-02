@@ -1,0 +1,42 @@
+.button {
+  height: 52px;
+  padding: 0;
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  background: $turquoise;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include phones {
+    width: 288px;
+  }
+}
+
+
+.button_round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+
+  @include tablets {
+    width: 90px;
+    height: 90px;
+  }
+
+  @include phones {
+    width: 65px;
+    height: 65px;
+  }
+}

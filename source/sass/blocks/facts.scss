@@ -1,0 +1,120 @@
+.facts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 127px;
+  padding-bottom: 131px;
+
+  @include tablets {
+    padding-top: 49px;
+    padding-bottom: 25px;
+  }
+
+  @include phones {
+    width: 100%;
+    padding-top: 51px;
+    padding-bottom: 37px;
+  }
+}
+
+.facts h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $special-black;
+  text-align: center;
+
+  @include tablets {
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+  @include phones {
+    letter-spacing: -0.005em;
+  }
+}
+
+.facts__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+
+  @include desktop-middle {
+    justify-content: space-around;
+  }
+
+  @include tablets {
+    justify-content: center;
+    margin-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.facts__item {
+  display: flex;
+  flex-direction: column;
+  width: 263px;
+  margin-right: 38px;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: $black;
+  letter-spacing: 0.4px;
+
+  @include desktop-middle {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    width: 266px;
+    margin-right: 30px;
+    margin-bottom: 41px;
+  }
+
+  @include phones {
+    width: 100%;
+    margin-right: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+  }
+}
+
+.facts__item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.facts__item:nth-of-type(2n) {
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.facts__list > .facts__item {
+  list-style-type: none;
+  counter-increment: list;
+}
+
+.facts__list > .facts__item::before {
+  content: "0" counter(list) " ";
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.27273px;
+  color: $turquoise;
+
+  @include tablets {
+    margin-bottom: 17px;
+  }
+
+  @include phones {
+    margin-bottom: 12px;
+  }
+}
