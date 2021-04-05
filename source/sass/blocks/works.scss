@@ -1,0 +1,87 @@
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.works h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $pink;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+
+  @include tablets {
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+  @include phones {
+    letter-spacing: -0.005em;
+  }
+}
+
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 800px;
+  list-style: none;
+}
+
+.works__item {
+  margin-bottom: 30px;
+}
+
+.works__link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 1, 0.3);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.works__link:hover img {
+  filter: brightness(20%);
+  transition: all 0.5s ease-in-out;
+}
+
+.works__link img {
+  display: block;
+  width: 100%;
+}
+
+.works__link svg {
+  opacity: 0.4;
+}
+
+.works__link:hover svg {
+  opacity: 1;
+  filter: brightness(20%);
+  transition: all 1s ease-in-out;
+}
+
+.works__link:hover .works__button {
+  display: block;
+}
+
+.works__button {
+  position: absolute;
+  top: 50%;
+  display: none;
+  width: 200px;
+  padding: 10px 0;
+  color: $white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid $white;
+  text-align: center;
+}

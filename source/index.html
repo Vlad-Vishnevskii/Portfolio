@@ -9,7 +9,7 @@
   <link rel="preload" href="./fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/open-sans-semi-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin>
-  <title>Велосипеды</title>
+  <title>Портфолио</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -52,7 +52,7 @@
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#types-of-bicycles">
-              Портфолио
+              Мои навыки
               <svg width="8" height="12">
                 <use xlink:href="img/sprite_auto.svg#icon-link"></use>
               </svg>
@@ -60,7 +60,7 @@
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#videos-about-bicycles">
-              Мои навыки
+              Портфолио
               <svg width="8" height="12">
                 <use xlink:href="img/sprite_auto.svg#icon-link"></use>
               </svg>
@@ -95,101 +95,220 @@
           Front-end разработчик
         </span>
         <ul class="main-info__social social-icons">
-          <li class="social-icons">
-            <a href="#">
-              <svg width="540" height="40">
+          <li class="social-icons__item">
+            <a href="https://vk.com/vishnevskii_vlad">
+              <svg width="40" height="40">
                 <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
-          <li class="social-icons"></li>
-          <li class="social-icons"></li>
-          <li class="social-icons"></li>
+          <li class="social-icons__item">
+            <a href="https://github.com/Vlad-Vishnevskii">
+              <svg width="42" height="42">
+                <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="https://www.instagram.com/vishnevskii_vlad91">
+              <svg width="48" height="48">
+                <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="https://api.whatsapp.com/send?phone=79262360192">
+              <svg width="40" height="40">
+                <use xlink:href="img/sprite_auto.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
     </div>
   </header>
 
   <main>
-    <section class="facts container" id="about-us">
+    <section class="about container" id="about-us">
       <h2>
-        Несколько фактов о нас
+        Обо мне
       </h2>
-      <ol class="facts__list">
-        <li class="facts__item">Самый широкий выбор велосипедов!</li>
-        <li class="facts__item">Доставка велосипедов по всей России!</li>
-        <li class="facts__item">Большой выбор крутых аксессуаров!</li>
-        <li class="facts__item">Профессиональные консультации!</li>
+      <div class="about__info">
+        <img src="/img/avatar.jpg" alt="avatar" width="200" height="300">
+        <div class="about__text">
+          <span>Год рождения: 1991</span>
+          <span>Начало карьеры: 2019</span>
+          <p>
+            Я целеустремленный, ответственный, желающий постоянно прогрессировать специалист. В 2019 году как мне кажеться нашел себя
+            в веб разработке, до этого долгое время занимался поддержкой российского ПО на базе 1С Предприятия, имею неутмимый интересе к разработке
+            и получаю от процесса огромное удовольствие.
+          </p>
+          <p>
+            Начал свой путь в Html Academy в 2019 году, прошел у них обучение по профессии "Front-end разработчик" с успешной защитой всех выпускных проектов.
+            По окончании обучения проходил стажировку в компании Лига А. Готов к работе на реальных проектах.
+          </p>
+          </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>
+        Мои навыки
+      </h2>
+      <ol class="skills__list">
+        <li class="skills__item skills__item_html">
+          <h3>
+            HTML5
+          </h3>
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite_auto.svg#icon-html"></use>
+          </svg>
+          <p>
+            Семантическая верстка с применением метологии БЭМ
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3>
+            CSS3
+          </h3>
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite_auto.svg#icon-css"></use>
+          </svg>
+          <p>
+            Стилизация страницы
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3>
+            JavaScript
+          </h3>
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite_auto.svg#icon-js"></use>
+          </svg>
+          <p>
+            Работа с JS для создания динамичности страницы
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3>
+            Sass
+          </h3>
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite_auto.svg#icon-sass"></use>
+          </svg>
+          <p>
+            Использвоание препроцессора для ускорения разработки и упрощения поддержки
+          </p>
+        </li>
+        <li class="skills__item skills__item_photoshop">
+          <h3>
+            Photoshop
+          </h3>
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite_auto.svg#icon-photoshop"></use>
+          </svg>
+          <p>
+            Работа с макетами PSD
+          </p>
+        </li>
+        <li class="skills__item">
+          <h3>
+            Figma
+          </h3>
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite_auto.svg#icon-figma"></use>
+          </svg>
+          <p>
+            Верстка по макетам из Figma
+          </p>
+        </li>
+        <li class="skills__item skills__item_gulp">
+          <h3>
+            Gulp
+          </h3>
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite_auto.svg#icon-gulp"></use>
+          </svg>
+          <p>
+            Использвоание инструментов автоматизации
+          </p>
+        </li>
+        <li class="skills__item skills__item_git">
+          <h3>
+            Git
+          </h3>
+          <svg width="42" height="42">
+            <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+          </svg>
+          <p>
+            Использвоание системы контроля версий
+          </p>
+        </li>
       </ol>
     </section>
 
-    <section class="types-of-bicycles" id="types-of-bicycles">
+    <section class="works container">
       <h2>
-        Виды велосипедов
+        Портфолио
       </h2>
-      <ul class="types-of-bicycles__list">
-        <li class="types-of-bicycles__item">
-          <div class="types-of-bicycles__img-wrapper">
-            <picture>
-              <source media="(max-width: 1023px)" srcset="img/road-bike-tablet@1x.webp 1x, img/road-bike-tablet@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1024px)" srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x" type="image/webp">
-              <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/road-bike-desktop@1x.jpg" srcset="img/road-bike-desktop@2x.jpg 2x" alt="Велосипед на фоне стены" width="342" height="503">
-            </picture>
-          </div>
-          <p>Дорожный велосипед</p>
+      <ul class="works__list">
+        <li class="works__item">
+          <a class="works__link" href="https://vlad-vishnevskii.github.io/pink-public-/">
+            <svg width="358" height="40">
+              <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
+            </svg>
+            <img src="/img/pink.jpg" alt="Веб-приложение пинк" width="358" height="578">
+            <div class="works__button">
+              Перейти на сайт
+            </div>
+          </a>
         </li>
-        <li class="types-of-bicycles__item">
-          <div class="types-of-bicycles__img-wrapper">
-            <picture>
-              <source media="(max-width: 1023px)" srcset="img/mountain-bike-tablet@1x.webp 1x, img/mountain-bike-tablet@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1024px)" srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x" type="image/webp">
-              <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/mountain-bike-desktop@1x.jpg" srcset="img/mountain-bike-desktop@2x.jpg 2x" alt="Велосипед в горах" width="342" height="566">
-            </picture>
-          </div>
-          <p>Горный велосипед</p>
+        <li class="works__item">
+          <a class="works__link" href="https://vlad-vishnevskii.github.io/bycecles-public/">
+            <svg width="358" height="40">
+              <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
+            </svg>
+            <img src="/img/bicycles.jpg" alt="Лендинг продажи велосипедов" width="358" height="578">
+            <div class="works__button">
+              Перейти на сайт
+            </div>
+          </a>
         </li>
-        <li class="types-of-bicycles__item">
-          <div class="types-of-bicycles__img-wrapper">
-            <picture>
-              <source media="(max-width: 1023px)" srcset="img/small-bike-tablet@1x.webp 1x, img/small-bike-tablet@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1024px)" srcset="img/small-bike-desktop@1x.webp 1x, img/small-bike-desktop@2x.webp 2x" type="image/webp">
-              <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/small-bike-desktop@1x.jpg" srcset="img/small-bike-desktop@2x.jpg 2x" alt="Розовый велосипед" width="342" height="512">
-            </picture>
-          </div>
-          <p>Детский велосипед</p>
+        <li class="works__item">
+          <a class="works__link" href="https://vlad-vishnevskii.github.io/1169525-nerds-28/">
+            <svg width="358" height="40">
+              <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
+            </svg>
+            <img src="/img/nerds.jpg" alt="Лендинг дизайн студии" width="358" height="578">
+            <div class="works__button">
+              Перейти на сайт
+            </div>
+          </a>
+        </li>
+        <li class="works__item">
+          <a class="works__link" href="https://vlad-vishnevskii.github.io/eurotur-public/">
+            <svg width="358" height="40">
+              <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
+            </svg>
+            <img src="/img/way.jpg" alt="Веб сайт о путишествиях" width="358" height="578">
+            <div class="works__button">
+              Перейти на сайт
+            </div>
+          </a>
+        </li>
+        <li class="works__item">
+          <a class="works__link" href="https://vlad-vishnevskii.github.io/tournament-table/">
+            <svg width="358" height="40">
+              <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
+            </svg>
+            <img src="/img/table.jpg" alt="Турнирная таблица для подсчета результатов" width="358" height="578">
+            <div class="works__button">
+              Перейти на сайт
+            </div>
+          </a>
         </li>
       </ul>
     </section>
 
-    <section class="videos-about-bicycles" id="videos-about-bicycles">
-      <div class="videos-about-bicycles__text container">
-        <h2>
-          Видео про велосипеды
-        </h2>
-        <p>
-          В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
-        </p>
-        <div class="videos-about-bicycles__image-wrapper">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/video-preview-mobile@1x.webp 1x, img/video-preview-mobile@2x.webp 2x" type="image/webp">
-            <source media="(max-width: 1023px)" srcset="img/video-preview-tablet@1x.webp 1x, img/video-preview-tablet@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.webp 1x, img/video-preview-desktop@2x.webp 2x" type="image/webp">
-            <!-- 1х: 929px; 2x: 1858px -->
-            <img src="img/video-preview-desktop@1x.jpg" srcset="img/video-preview-desktop@2x.jpg 2x"  alt="Видео про велосипеды" width="929" height="522">
-          </picture>
-          <button type="button" class="videos-about-bicycles__play-button button button_round">
-            <svg width="13" height="18">
-              <use xlink:href="img/sprite_auto.svg#icon-play"></use>
-            </svg>
-            <span class="visually-hidden">
-              Воспроизвести
-            </span>
-          </button>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="page-footer container" id="contacts">
