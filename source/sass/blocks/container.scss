@@ -1,9 +1,14 @@
 .container {
-  width: 950px;
+  width: 900px;
   margin: 0 auto;
 
+  @include desktop-large {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   @include tablets {
-    max-width: initial;
+    width: 100%;
     padding: 0 35px;
   }
 

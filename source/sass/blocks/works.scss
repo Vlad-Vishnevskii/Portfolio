@@ -32,10 +32,23 @@
   margin: 0;
   width: 800px;
   list-style: none;
+
+  @include tablets {
+    width: 600px;
+  }
+
+  @include phones {
+    width: 320px;
+    justify-content: center;
+  }
 }
 
 .works__item {
   margin-bottom: 30px;
+
+  @include tablets {
+    margin-bottom: 60px;
+  }
 }
 
 .works__link {
@@ -46,29 +59,42 @@
   box-shadow: 0 2px 8px rgba(0, 0, 1, 0.3);
   border-radius: 5px;
   text-decoration: none;
+  outline: none;
 }
 
-.works__link:hover img {
+.works__link:hover img,
+.works__link:focus img {
   filter: brightness(20%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .works__link img {
   display: block;
   width: 100%;
+
+  @include tablets {
+    width: 270px;
+    height: 412px;
+  }
 }
 
 .works__link svg {
   opacity: 0.4;
+
+  @include tablets {
+    display: none;
+  }
 }
 
-.works__link:hover svg {
+.works__link:hover svg,
+.works__link:focus svg {
   opacity: 1;
   filter: brightness(20%);
-  transition: all 1s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
-.works__link:hover .works__button {
+.works__link:hover .works__button,
+.works__link:focus .works__button {
   display: block;
 }
 
@@ -84,4 +110,12 @@
   text-transform: uppercase;
   border: 1px solid $white;
   text-align: center;
+
+  @include tablets {
+    display: block;
+    position: static;
+    background-color: $black;
+    width: 100%;
+    border: none;
+  }
 }

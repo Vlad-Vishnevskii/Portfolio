@@ -5,24 +5,6 @@
 
   @include tablets {
     width: 100%;
-    min-height: 340px;
-    background-image: url("../img/bike-background-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-color: $black;
-    background-size: cover;
-
-    @include retina {
-      background-image: url("../img/bike-background-tablet@2x.jpg");
-    }
-  }
-
-  @include phones {
-    min-height: 390px;
-    background-image: url("../img/bike-background-mobile@1x.jpg");
-
-    @include retina {
-      background-image: url("../img/bike-background-mobile@2x.jpg");
-    }
   }
 }
 
@@ -49,8 +31,6 @@
 
 
   @include tablets {
-    margin-top: 82px;
-    margin-bottom: 0;
     color: $white;
     font-weight: bold;
     font-size: 30px;
@@ -60,6 +40,7 @@
   }
 
   @include phones {
+    font-size: 24px;
     margin-top: 67px;
     padding-left: 15px;
     padding-right: 15px;
@@ -75,10 +56,9 @@
   @include tablets {
     width: 435px;
     margin: 0 auto;
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 22px;
     line-height: 32px;
     text-align: center;
     color: $white-opacity-low;
@@ -86,6 +66,7 @@
 
   @include phones {
     width: 288px;
+    font-size: 20px;
   }
 }
 
@@ -97,49 +78,39 @@
   color: $white;
   border-bottom: 2px solid $white;
   padding-bottom: 8px;
-}
-
-.main-info__right form {
-  display: flex;
-  flex-direction: column;
-  width: 327px;
 
   @include tablets {
-    width: 322px;
-    margin-top: 65px;
+    margin-top: 20px;
   }
 
   @include phones {
-    width: 100%;
-    padding: 0 16px;
-    align-items: center;
-  }
-}
-
-.main-info__right h2 {
-  margin-top: 7px;
-  margin-bottom: 17px;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  color: $white;
-  text-align: center;
-  letter-spacing: 0.3px;
-
-  @include tablets {
-    margin-bottom: 29px;
     font-size: 18px;
-    line-height: 28px;
-    text-align: center;
-    color: $black;
-    letter-spacing: 0;
-  }
-
-  @include phones {
-    margin-bottom: 19px;
   }
 }
 
 .main-info__social {
   margin-top: 50px;
+
+  @include phones {
+    width: 250px;
+  }
+}
+
+.main-info__social svg {
+  @include tablets {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.main-info__social a:hover svg {
+  fill: $pink;
+}
+
+.main-info__social a {
+  outline: none;
+}
+
+.main-info__social a:focus svg {
+  fill: $pink-opacity;
 }

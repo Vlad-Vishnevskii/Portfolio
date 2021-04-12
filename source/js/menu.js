@@ -3,7 +3,7 @@
 
   var mainNav = document.querySelector('.main-nav');
   var closeButton = document.querySelector('.main-nav__close-btn');
-  var burgerButton = document.querySelector('.mobile-top__button');
+  var burgerButton = document.querySelector('.header__burger-button');
   var body = document.querySelector('body');
   var navList = document.querySelector('.main-nav__list');
 

@@ -1,0 +1,111 @@
+.certificates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  background-color: $light-grey;
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.certificates__wrapper {
+  position: relative;
+}
+
+.certificates h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: $pink;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.certificates__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@-webkit-keyframes fade {
+  from {
+      opacity: 0.3
+  }
+  to {
+      opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+      opacity: 0.3
+  }
+  to {
+      opacity: 1
+  }
+}
+
+
+.certificates__item {
+  display: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 1, 0.3);
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.certificates__item img {
+  display: block;
+
+  @include phones {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+.certificates__item_current {
+  display: block;
+  left: 0;
+}
+
+
+.certificates__arrow-btn {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 51px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.certificates__arrow-btn svg {
+  // @include phones {
+  //   width: 20px;
+  //   height: 41px;
+  // }
+}
+
+.certificates__arrow-btn_left {
+  left: -80px;
+
+  @include phones {
+    left: -40px;
+  }
+}
+
+.certificates__arrow-btn_right {
+  right: -80px;
+
+  @include phones {
+    right: -40px;
+  }
+}
+

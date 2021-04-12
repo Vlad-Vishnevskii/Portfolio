@@ -1,145 +1,124 @@
 .page-footer {
+  padding: 40px 0;
+  padding-bottom: 60px;
+  background-color: $black;
+}
+
+.page-footer__wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
-  padding-bottom: 98px;
-  margin: 0 auto;
-  margin-top: 222px;
-
-  @include tablets {
-    width: 100%;
-    margin-top: 131px;
-  }
-
   @include phones {
-    margin-top: 103px;
-    padding-left: 0;
-    padding-right: 0;
+    flex-direction: column;
   }
 }
 
-.page-footer h3 {
-  margin-bottom: 0;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  color: $special-black;
-  width: 235px;
-  letter-spacing: 0.2px;
-
+.page-footer__logo {
   @include tablets {
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-  }
-
-  @include phones {
-    font-size: 18px;
+    width: 55px;
+    height: 55px;
   }
 }
 
-.page-footer p {
-  width: 555px;
-  margin-top: 29px;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 31px;
-  color: $black-opacity-low;
-  text-align: center;
-  letter-spacing: 0.7px;
-
-  @include tablets {
-    width: 100%;
-    margin-top: 19px;
-    font-weight: normal;
-    letter-spacing: 0.4px;
-  }
-
-  @include phones {
-    width: 272px;
-  }
-}
-
-.page-footer img {
-  display: block;
-  margin-top: 20px;
-
-  @include tablets {
-    width: 698px;
-    height: 545px;
-    margin-top: 2px;
-    object-fit: cover;
-  }
-
-  @include phones {
-    width: 320px;
-    height: 250px;
-  }
+.page-footer__logo  path {
+  fill: $white;
 }
 
 .page-footer__contacts {
   display: flex;
-  justify-content: space-between;
-  width: 566px;
-  margin-top: 41px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
 
   @include tablets {
-    width: 577px;
-    margin-top: 20px;
+    order: 2;
+    align-items: center;
   }
 
   @include phones {
-    flex-direction: column;
-    justify-content: initial;
-    align-items: center;
-    width: 100%;
-    margin-top: 31px;
+    margin-bottom: 20px;
   }
 }
 
 .page-footer__link {
-  display: flex;
-  align-items: center;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
+  margin-bottom: 20px;
   text-decoration: none;
-  color: $black-opacity-extra;
-  margin-bottom: 10px;
+  color: $white;
+  outline: none;
 
   &:hover {
-    color: $black;
+    color: $pink;
   }
-}
 
-.page-footer__link svg {
-  margin-right: 16px;
-}
+  &:focus {
+    color: $pink-opacity;
+  }
 
-.page-footer__link_phone svg {
-  fill: $white;
-  margin-right: 15px;
-}
-
-.page-footer__link_email {
   @include tablets {
-    padding-left: 9px;
-    letter-spacing: 0.5px;
-  }
-
-  @include phones {
-    margin-bottom: 23px;
+    margin-bottom: 10px;
   }
 }
 
-.page-footer__link_phone {
-  text-decoration: none;
-  padding-right: 20px;
+.page-footer__link_email svg {
+  margin-right: 5px;
+}
+
+.page-footer__developer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include phones {
-    padding-right: 15px;
+    margin-bottom: 20px;
   }
 }
+
+.page-footer__developer-info {
+  display: block;
+  margin-top: 10px;
+  color: $pink;
+  font-weight: bold;
+  font-size: 18px;
+
+  @include tablets {
+    font-size: 16px;
+    align-self: flex-start;
+  }
+}
+
+.page-footer__social {
+  list-style: none;
+  width: 25%;
+
+  @include tablets {
+    order: 3;
+  }
+
+  @include phones {
+    width: 220px;
+  }
+}
+
+.page-footer__social  svg {
+  fill: $pink;
+
+  @include tablets {
+    width: 30px;
+    height: 30px;
+  }
+
+  @include phones {
+    fill: $white;
+  }
+}
+
+.page-footer__social a:hover svg {
+  fill: $white;
+}
+
+.page-footer__social a:focus svg {
+  fill: $pink-opacity;
+}
+
+
+

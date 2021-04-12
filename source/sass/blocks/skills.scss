@@ -1,11 +1,10 @@
 .skills {
   display: flex;
   flex-direction: column;
-  padding-top: 127px;
-  padding-bottom: 131px;
+  align-items: center;
+  padding-top: 42px;
+  padding-bottom: 42px;
   background-color: $light-grey;
-  padding-left: 100px;
-  padding-right: 100px;
 
   @include tablets {
     padding-top: 49px;
@@ -41,55 +40,65 @@
 .skills__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  margin-top: 25px;
+  gap: 25px 93px;
+  width: 950px;
+  margin: 0 auto;
   padding: 0;
-  justify-content: space-between;
 
-  @include desktop-middle {
-    justify-content: space-around;
+  @include tablets {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 35px;
+    justify-content: center;
   }
 
   @include tablets {
-    justify-content: center;
-    margin-top: 10px;
-    padding-left: 0;
-    padding-right: 0;
+    gap: 0 0;
   }
 }
 
 .skills__item {
   display: flex;
   flex-direction: column;
-  width: 230px;
-  margin-right: 38px;
+  width: 164px;
   margin-bottom: 20px;
   align-items: center;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 22px;
   color: $black;
   letter-spacing: 0.4px;
 
-
-  @include desktop-middle {
-    margin-right: 0;
-  }
-
   @include tablets {
     width: 266px;
-    margin-right: 30px;
     margin-bottom: 41px;
+    margin-right: 20px;
   }
 
   @include phones {
     width: 100%;
     margin-right: 0;
+    margin-bottom: 0;
     font-weight: normal;
     font-size: 18px;
     line-height: 34px;
+    border-bottom: 2px solid $black;
+  }
+}
+
+.skills__item h3 {
+  @include phones {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.skills__item p {
+  @include phones {
+    // margin-bottom: 0;
+    font-size: 15px;
   }
 }
 
@@ -100,6 +109,12 @@
 .skills__item:nth-of-type(2n) {
   @include tablets {
     margin-right: 0;
+  }
+}
+
+.skills__item:last-of-type {
+  @include phones {
+    border: none;
   }
 }
 
