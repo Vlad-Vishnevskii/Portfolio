@@ -1,3 +1,6 @@
+'use strict';
+(function () {
+
 const topButton = document.querySelector('.page-footer__top-btn');
 const pixelsBeforeShow = 200;
 
@@ -10,3 +13,5 @@ const showTopButton = function () {
 }
 
 window.addEventListener('scroll', showTopButton);
+
+})();

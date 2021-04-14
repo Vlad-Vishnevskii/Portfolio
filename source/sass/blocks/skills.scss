@@ -22,7 +22,6 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  color: $special-black;
   text-align: center;
   color: $black;
   text-transform: uppercase;
@@ -121,6 +120,6 @@
 .skills__item_html svg,
 .skills__item_photoshop svg,
 .skills__item_gulp svg,
-.skills__item_git svg{
+.skills__item_git svg {
   fill: $pink;
 }

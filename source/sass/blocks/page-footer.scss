@@ -21,7 +21,7 @@
   }
 }
 
-.page-footer__logo  path {
+.page-footer__logo path {
   fill: $white;
 }
 
@@ -99,7 +99,7 @@
   }
 }
 
-.page-footer__social  svg {
+.page-footer__social svg {
   fill: $pink;
 
   @include tablets {
@@ -146,6 +146,3 @@
 .icon-btn:hover polygon {
   fill: $black-opacity-low;
 }
-
-
-
