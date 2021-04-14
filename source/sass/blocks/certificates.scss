@@ -12,6 +12,8 @@
 
 .certificates__wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .certificates h2 {
@@ -86,13 +88,6 @@
   }
 }
 
-.certificates__arrow-btn svg {
-  // @include phones {
-  //   width: 20px;
-  //   height: 41px;
-  // }
-}
-
 .certificates__arrow-btn_left {
   left: -80px;
 
@@ -108,4 +103,34 @@
     right: -40px;
   }
 }
+
+.certificates__slider-buttons {
+  position: absolute;
+  bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 20%;
+  list-style: none;
+
+  @include phones {
+    bottom: 12px;
+    width: 37%;
+  }
+}
+
+.certificates__item-btn {
+  width: 20px;
+  height: 5px;
+  background-color: $white;
+  border-radius: 25px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.certificates__item-btn_active {
+  opacity: 1;
+}
+
 
