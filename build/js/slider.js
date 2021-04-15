@@ -5,24 +5,29 @@ const sliderWrapper = document.querySelector('.certificates__wrapper');
 const sliderList = document.querySelectorAll('.certificates__item');
 let currentIndex = 0;
 const startIndex = 0;
-const lengthOfList = sliderList.length;
-const btnRight = document.querySelector('.certificates__btn-right');
-const btnLeft = document.querySelector('.certificates__btn-left');
 const sliderControlButtons = document.querySelectorAll('.certificates__item-btn');
 const sliderControlButtonsList = document.querySelector('.certificates__slider-buttons');
 
-const moveToRight = function () {
-  currentIndex +=1;
+const stopOnMaxSlide = function () {
   if (currentIndex > sliderList.length - 1 ) {
     currentIndex = 0;
   }
 }
 
-const moveToLeft = function () {
-  currentIndex -=1;
+const stopOnMinSlide = function () {
   if (currentIndex < startIndex) {
     currentIndex = sliderList.length - 1;
   }
+}
+
+const moveToRight = function () {
+  currentIndex +=1;
+  stopOnMaxSlide();
+}
+
+const moveToLeft = function () {
+  currentIndex -=1;
+  stopOnMinSlide();
 }
 
 const hideSlide = function () {
@@ -38,17 +43,21 @@ const showSlide = function () {
 const onSliderButtonClick = function (evt) {
   const target = evt.target;
   hideSlide();
+  console.log(currentIndex)
   if (target.closest('.certificates__arrow-btn_right')) {
     moveToRight();
   }
   if (target.closest('.certificates__arrow-btn_left')) {
     moveToLeft();
   }
+  console.log(currentIndex)
   showSlide();
 }
 
 const onSliderControlClick = function (evt) {
   const target = evt.target;
+  stopOnMinSlide();
+  stopOnMaxSlide();
   hideSlide();
   currentIndex = Number(target.dataset.number);
   showSlide();
