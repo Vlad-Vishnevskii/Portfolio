@@ -10,7 +10,7 @@
   <link rel="preload" href="./fonts/open-sans-semi-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" type="image/png" href="favicon.png">
-  <title>Портфолио</title>
+  <title>Портфолио frontend-разработчика Вишневского В.В.</title>
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
@@ -26,6 +26,7 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/75856108" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
+  <meta name="description" content="Портфолио веб-разработчика Вишневского Владислава"/>
 </head>
 
 <body>
@@ -184,7 +185,7 @@
           <p>
             Я целеустремленный, ответственный, желающий постоянно прогрессировать специалист. В 2019 году нашел себя
             в веб разработке, до этого долгое время занимался поддержкой российского ПО на базе 1С Предприятия, имею
-            неутмимый интерес к разработке
+            неутомимый интерес к разработке
             и получаю от процесса огромное удовольствие.
           </p>
           <p>
@@ -368,37 +369,24 @@
       <h2>
         Сертификаты
       </h2>
-      <div class="certificates__wrapper">
-        <button class="certificates__arrow-btn certificates__arrow-btn_left">
-          <svg width="30" height="51">
-            <use xlink:href="img/sprite_auto.svg#icon-left"></use>
-          </svg>
-        </button>
-        <ul class="certificates__list">
-          <li class="certificates__item certificates__item_current">
-            <img src="img/cert4.png" alt="Сертификат по профессии" width="468" height="657">
-          </li>
-          <li class="certificates__item">
-            <img src="img/cert1.png" alt="Сертификат по верстке" width="468" height="657">
-          </li>
-          <li class="certificates__item">
-            <img src="img/cert2.png" alt="Сертификат по адаптивной верстке" width="468" height="657">
-          </li>
-          <li class="certificates__item">
-            <img src="img/cert3.png" alt="Сертификат по разработке на JS" width="468" height="657">
-          </li>
-        </ul>
-        <button class="certificates__arrow-btn certificates__arrow-btn_right">
-          <svg width="30" height="51">
-            <use xlink:href="img/sprite_auto.svg#icon-right"></use>
-          </svg>
-        </button>
-        <ul class="certificates__slider-buttons">
-          <li class="certificates__item-btn certificates__item-btn_active" data-number="0"></li>
-          <li class="certificates__item-btn" data-number="1"></li>
-          <li class="certificates__item-btn" data-number="2"></li>
-          <li class="certificates__item-btn" data-number="3"></li>
-        </ul>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/cert4.png" alt="Сертификат по профессии" height="598">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cert1.png" alt="Сертификат по верстке" height="598">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cert2.png" alt="Сертификат по адаптивной верстке" height="598">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cert3.png" alt="Сертификат по разработке на JS" height="598">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
 
@@ -517,9 +505,11 @@
       </a>
   </footer>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/top-btn.js"></script>
-  <script src="js/slider.js"></script>
 </body>
 
 </html>
