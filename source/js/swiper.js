@@ -1,21 +1,8 @@
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
-  slidesPerView: 2,
+  effect: 'flip',
   loop: true,
-  spaceBetween: 10,
-
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 0
-    },
-    // when window width is >= 980px
-    980: {
-      slidesPerView: 2,
-      spaceBetween: 10
-    }
-  },
+  grabCursor: true,
 
   // If we need pagination
   pagination: {

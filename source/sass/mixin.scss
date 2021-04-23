@@ -17,6 +17,12 @@
   }
 }
 
+@mixin phones-min {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
 @mixin retina {
   @media screen and (min-resolution: 2dppx) {
     @content;
