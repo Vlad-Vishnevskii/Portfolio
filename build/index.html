@@ -10,6 +10,7 @@
   <link rel="preload" href="./fonts/open-sans-semi-bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="./fonts/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>Портфолио frontend-разработчика Вишневского В.В.</title>
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Yandex.Metrika counter -->
@@ -26,7 +27,7 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/75856108" style="position:absolute; left:-9999px;" alt=""></div></noscript>
   <!-- /Yandex.Metrika counter -->
-  <meta name="description" content="Портфолио веб-разработчика Вишневского Владислава">
+  <meta name="description" content="Страница-портфолио веб-разработчика Вишневского Владислава">
 </head>
 
 <body>
@@ -95,16 +96,16 @@
       </nav>
     </div>
     <div class="main-info container">
-      <h1>
+      <h1 class="animation-title anim-items anim-no-repeat">
         Добро пожаловать
       </h1>
-      <p>
+      <p class="animation-name anim-items anim-no-repeat">
         Меня зовут Вишневский Владислав
       </p>
-      <span>
+      <span class="animation-profession anim-items anim-no-repeat">
         Front-end разработчик
       </span>
-      <ul class="main-info__social social-icons">
+      <ul class="main-info__social social-icons anim-social anim-items anim-no-repeat">
         <li class="social-icons__item">
           <a href="https://vk.com/vishnevskii_vlad">
             <svg width="40" height="40">
@@ -139,12 +140,12 @@
 
   <main>
     <section class="about container" id="about-us">
-      <h2>
+      <h2 class="animation-about-title anim-items anim-no-repeat">
         Обо мне
       </h2>
       <div class="about__info">
-        <img src="img/avatar2.jpg" alt="avatar" width="200" height="200">
-        <div class="about__text">
+        <img class="animation-avatar anim-items anim-no-repeat" src="img/avatar2.jpg" alt="avatar" width="200" height="200">
+        <div class="about__text animation-about__text  anim-items anim-no-repeat">
           <span>Год рождения: 1991</span>
           <span>Начало карьеры: 2019</span>
           <p>
@@ -163,11 +164,11 @@
     </section>
 
     <section class="skills" id="my-skills">
-      <h2>
+      <h2 class="animation-skills-title anim-items anim-no-repeat">
         Мои навыки
       </h2>
       <ol class="skills__list">
-        <li class="skills__item skills__item_html">
+        <li class="skills__item skills__item_html animation-skills__item anim-items anim-no-repeat">
           <h3>
             HTML5
           </h3>
@@ -178,7 +179,7 @@
             Семантическая верстка с применением метологии БЭМ
           </p>
         </li>
-        <li class="skills__item">
+        <li class="skills__item animation-skills__item anim-items anim-no-repeat">
           <h3>
             CSS3
           </h3>
@@ -189,7 +190,7 @@
             Стилизация страницы
           </p>
         </li>
-        <li class="skills__item">
+        <li class="skills__item anim-items animation-skills__item anim-no-repeat">
           <h3>
             JavaScript
           </h3>
@@ -200,7 +201,7 @@
             Работа с JS для создания динамичности страницы
           </p>
         </li>
-        <li class="skills__item">
+        <li class="skills__item anim-items animation-skills__item anim-no-repeat">
           <h3>
             Sass
           </h3>
@@ -211,7 +212,7 @@
             Использвоание препроцессора для ускорения разработки и упрощения поддержки
           </p>
         </li>
-        <li class="skills__item skills__item_photoshop">
+        <li class="skills__item skills__item_photoshop anim-items animation-skills__item anim-no-repeat">
           <h3>
             Photoshop
           </h3>
@@ -222,7 +223,7 @@
             Работа с макетами PSD
           </p>
         </li>
-        <li class="skills__item">
+        <li class="skills__item anim-items animation-skills__item anim-no-repeat">
           <h3>
             Figma
           </h3>
@@ -233,7 +234,7 @@
             Верстка по макетам из Figma
           </p>
         </li>
-        <li class="skills__item skills__item_gulp">
+        <li class="skills__item skills__item_gulp anim-items animation-skills__item anim-no-repeat">
           <h3>
             Gulp
           </h3>
@@ -244,7 +245,7 @@
             Использвоание инструментов автоматизации
           </p>
         </li>
-        <li class="skills__item skills__item_git">
+        <li class="skills__item skills__item_git anim-items animation-skills__item anim-no-repeat">
           <h3>
             Git
           </h3>
@@ -259,11 +260,11 @@
     </section>
 
     <section class="works container" id="portfolio">
-      <h2>
+      <h2 class="anim-items animation-works-title anim-no-repeat">
         Портфолио
       </h2>
       <ul class="works__list">
-        <li class="works__item">
+        <li class="works__item anim-items animation-works__item anim-no-repeat">
           <a class="works__link" href="http://pink.frontend-vvv.ru/">
             <svg width="358" height="40">
               <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
@@ -277,7 +278,7 @@
             </div>
           </a>
         </li>
-        <li class="works__item">
+        <li class="works__item anim-items animation-works__item anim-no-repeat">
           <a class="works__link" href="http://bycecles.frontend-vvv.ru/">
             <svg width="358" height="40">
               <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
@@ -291,7 +292,7 @@
             </div>
           </a>
         </li>
-        <li class="works__item">
+        <li class="works__item anim-items animation-works__item anim-no-repeat">
           <a class="works__link" href="http://nerds.frontend-vvv.ru/">
             <svg width="358" height="40">
               <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
@@ -302,7 +303,7 @@
             </div>
           </a>
         </li>
-        <li class="works__item">
+        <li class="works__item anim-items animation-works__item anim-no-repeat">
           <a class="works__link" href="http://way.frontend-vvv.ru/">
             <svg width="358" height="40">
               <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
@@ -316,7 +317,7 @@
             </div>
           </a>
         </li>
-        <li class="works__item">
+        <li class="works__item anim-items animation-works__item anim-no-repeat">
           <a class="works__link" href="http://tournament-table.frontend-vvv.ru/">
             <svg width="358" height="40">
               <use xlink:href="img/sprite_auto.svg#icon-browser"></use>
@@ -431,6 +432,7 @@
 
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
+  <script src="js/animation-page.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/top-btn.js"></script>
 </body>

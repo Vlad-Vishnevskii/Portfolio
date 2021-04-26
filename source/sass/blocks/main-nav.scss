@@ -73,6 +73,7 @@
 }
 
 .main-nav__link {
+  position: relative;
   text-decoration: none;
   font-size: 16px;
   line-height: 32px;
@@ -80,17 +81,39 @@
   color: $white;
   text-transform: uppercase;
   font-weight: bold;
+  transition: color 1s ease 0s;
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 0%;
+    height: 2px;
+    content: "";
+    background-color: $pink;
+    transition: width 0.4s ease-in-out;
+    transform: translateX(-50%);
+  }
 
   &:hover {
     color: $pink;
     padding-bottom: 5px;
-    border-bottom: 2px solid $pink;
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 
   &:focus {
     color: $pink-opacity;
     outline: none;
   }
+
+  &:focus::after {
+    width: 100%;
+    background-color: $pink-opacity;
+  }
+
 
   @include tablets {
     display: flex;

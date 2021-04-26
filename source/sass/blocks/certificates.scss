@@ -4,6 +4,7 @@
   align-items: center;
   padding: 80px 0;
   background-color: $light-grey;
+  overflow: hidden;
 
   @include phones {
     width: 100%;
